@@ -7,7 +7,7 @@
 // https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 
 use debcontrol::{Paragraph, Field, parse_str};
-use debcontrol_struct::DebControl;
+use debcontrol_struct_with_oma_decontrol::DebControl;
 
 #[derive(Debug, DebControl)]
 pub struct CopyrightHeader {

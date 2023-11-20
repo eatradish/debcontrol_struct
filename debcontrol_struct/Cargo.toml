@@ -3,7 +3,7 @@
 # SPDX-License-Identifier: Apache-2.0 OR MIT
 
 [package]
-name = "debcontrol_struct"
+name = "debcontrol-struct-with-oma-decontrol"
 version = "0.3.1"
 authors = ["Agathe Porte <microjoe@microjoe.org>"]
 edition = "2018"
@@ -12,12 +12,12 @@ description = "Automatic Debian control file parsing for structs."
 readme = "README.md"
 keywords = ["deb", "debian", "control", "dpkg"]
 categories = ["parser-implementations"]
-repository = "https://github.com/MicroJoe/debcontrol_struct"
+repository = "https://github.com/eatradish/debcontrol_struct"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-debcontrol = "0.1.1"
+debcontrol = { version = "0.3", package = "oma-debcontrol" }
 debcontrol_struct_derive = { version = "0.3.1", optional = true, path = "../debcontrol_struct_derive" }
 
 [dev-dependencies]
